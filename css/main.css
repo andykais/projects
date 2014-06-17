@@ -1,0 +1,112 @@
+.jumbrtron {
+		/*list-style: none;*/
+    margin-bottom: 0px;
+    /*margin-top: 0px; */
+    /*background-image: url(../img/jumbotronbackground.jpg);*/
+    background-color: #333;
+    padding-bottom: 150px;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background: linear-gradient(#333, #222);
+    /*background: -moz-linear-gradient(#333, #333); /* For Firefox 3.6 to 15 */*/
+    /*background: -moz-linear-gradient()*/
+}
+
+.logo {
+	position: absolute;
+	top: 6px;
+	left: 12px;
+	font-family: 'Stalemate', cursive;
+	/*font-family: Stalemate, serif;*/
+	/*src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');*/
+	/*src: "http://www.google.com/fonts#UsePlace:use/Collection:Stalemate" format("truetype");*/
+	/*src: "fonts/Stalemate-Regular" format("truetype");*/
+	font-weight: bold;
+	font-size: 100px;
+	color: #00FF66;
+	text-shadow: #111 0em 0.07em 0em;
+
+}
+
+.slogan {
+	position: absolute;
+	top: 112px;
+	left: 26px;
+	font-family: Jura, serif;
+
+	src: "fonts/Jura-Regular.ttf" format("truetype");
+	font-size: 15px;
+}
+.description {
+	position: relative;
+	padding-top: 70px;
+	width:250px;
+	margin-left: 15px;
+}
+
+.portfolio {
+	position: relative;
+	background-image:url('images/processing-web.png');
+	padding-bottom: 100px;
+}*/
+
+/*#processing-container {
+	width: 100px;
+}*/
+
+.processing-header {
+	padding-top:50px;
+}
+#processing-container {
+  position:relative;
+  top:70px;
+  /*left:311px;*/
+  width:900px;
+  /*z-index: -1;*/
+}
+#InputTriangle {
+	position: relative;
+	left:-1px;
+	/*z-index:-1;*/
+	/*display: block;*/
+	/*margin-left:40%;*/
+	/*margin-right:auto; */
+	/*top:-446px;*/
+}
+
+.sketch-buttons {
+	text-align: left;
+	/*position: relative;*/
+	/*top:50px;*/
+	/*left:310px;*/
+}
+
+footer {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #777;
+  clear: both;
+  width: 80%;
+  padding: 30px 0;
+  margin: 70px auto 0 auto;
+  border-top: 1px solid #eee;
+	position: absolute; 
+	right: 10%;
+	left: 10%;
+}
+.site-footer-links {
+	position: center;
+}
+
+.site-footer-links li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.site-footer-links li:first-child {
+	/*position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;*/
+  margin-left: 0;
+  /*padding-bottom:2cm;*/
+}

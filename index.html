@@ -1,1 +1,85 @@
-My GitHub Page
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Andrew Kaiser</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+		<!-- <link href="styles/main.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
+
+		<!-- Optional theme -->
+		<!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"> -->
+
+		<script type="text/javascript" src="processing/processing.min.js"></script>
+		<script type="text/javascript">
+			function drawSomeText(id) {
+      	var pjs = Processing.getInstanceById(id);
+      	var text = document.getElementById('inputtext').value;
+      	pjs.enterEndpts(text);
+    	}
+    </script>
+	</head>
+	<div class="jumbrtron">
+		<link href='http://fonts.googleapis.com/css?family=Stalemate' rel='stylesheet' type='text/css'>
+<!-- 		<link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'> -->
+			<div class="logo"> Andrew Kaiser</div>
+			<p class="slogan">Coding, pixel art, web design & photography. </p>
+			<!-- <p>I write code and make designs. I like to dabble. </p> -->
+			<!-- <p>I'm a programmer in the makings and an artist at heart. </p> -->
+	</div>
+	<body>
+		<div class="description">
+			<div class="panel panel-default">
+				<div class="panel-body">
+			  	This project is based off of the Serpinski Triangle's 
+					<a href="http://en.wikipedia.org/wiki/Sierpinski_triangle#Chaos_game">Chaos Game</a> 
+			    <br> It says from a random starting point, if the midpoint between any three endpoints is chosen, and a new midpoint is continually chosen, from an endpoint and the midpoint, a dense fractal triangle will arise.<br>
+			    I took this method and applied it to polygons with more than 3 endpoints. The results can be quite beautiful.
+			  </div>
+			</div>
+		</div>
+		<center class="processing-file">
+			<div id="processing-container" class="panel panel-primary">
+			  <div class="panel-heading processing-header">
+			    Serpinksi's Triangle
+			  </div>
+				<canvas id="InputTriangle" data-processing-sources="processing/InputTriangle.pde"></canvas>
+			  <div class="panel-body instructions">
+			  	<div class="sketch-buttons">
+						<select id="inputtext">
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5</option>
+						  <option value="6">6</option>
+						  <option value="7">7</option>
+						  <option value="8">8</option>
+						  <option value="9">9</option>
+						</select> 
+						<button type="button" onclick="drawSomeText('InputTriangle')">refresh</button>
+						Choose how many endpoints and use the mouse to place them on the canvas
+
+					</div>
+			  </div>
+			</div>
+		</center>
+		<!-- <div class="sketch-buttons">
+			<input type="textfield" value="4" id="inputtext">
+	  	<button type="button" onclick="drawSomeText('InputTriangle')">enter</button>
+	  </div> -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
+	</body>
+<footer class="info">
+	<ul class="site-footer-links">
+		<li>@ 2014 Rensselear Polytechnic University</li>
+		<li><a href="http://www.linkedin.com/in/kaisea"> Contact</a> </li>
+		<li><a href="http://www.github.com/AndrewKaiser"> Visit My Github</a> </li>
+	</ul>
+</footer>
+
+</html>
